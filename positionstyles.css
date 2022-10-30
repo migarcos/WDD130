@@ -62,6 +62,39 @@
   background-color: blue; 
   margin-top: 300px;
 } 
+/*     
+.content2 {
+  
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+
+}
+.red2 {
+  width: 200px; 
+  height: 200px; 
+  background-color: red; 
+} 
+.green2 { 
+  width: 200px; 
+  height: 200px; 
+  background-color: green; 
+  margin-top: 100px;
+} 
+.yellow2 {
+  width: 200px; 
+  height: 200px; 
+  background-color: gold; 
+  margin-top: 200px;
+} 
+.blue2 {
+  width: 200px; 
+  height: 200px; 
+  background-color: blue; 
+  margin-top: 300px;
+} 
+*/
+
+
 /* Activity 3 styles */ 
 .content3 {
   /* This is the parent of the activity 3 boxes. */
