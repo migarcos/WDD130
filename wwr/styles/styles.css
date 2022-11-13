@@ -51,6 +51,7 @@ section h2{
 footer p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
+    color: #fff;
 }
 footer p a:hover {
     text-decoration: underline;
@@ -92,10 +93,11 @@ nav a:hover{
     z-index: -1;
 } 
 #hero-msg {
+    margin-top: 100px;
     margin-bottom: 60px;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+
 }
 #hero-msg h1 {
     font-size: 3em;
@@ -108,6 +110,82 @@ nav a:hover{
 .button-box{
     text-align: center;
 }
+/* Added to rivers.html */
+#river {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /*margin-top: -100px;*/
+    background-color: rgba(0,0,0,.2);
+}
+#river-img {
+    width: 100%;
+}
+#river-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+} 
+#river-msg {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+#river-msg h1 {
+    font-size: 3em;
+}
+#river-msg h1, #river-msg h4{
+    
+    font-family: 'Prompt', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.river-section {
+    grid-column: 2/6;
+    margin-top: 40px;
+}
+.river-section h2, p{
+    color: #000000;
+    font-size: 0.8em;
+    text-align: justify;    
+}
+.river-section a, .river-section2 a{   
+    text-align: right;
+    border: solid 2px  #000000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e2247;
+    font-size: 0.5em;
+    text-decoration: none;
+}
+.river-section a:hover, .river-section2 a:hover{   
+    text-align: right;
+    border: solid 2px  darkblue;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ec7c32;
+    font-size: 0.5em;
+    color: darkblue;
+}
+.river-img {
+    grid-column: 7/10;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.river-section2 {
+    grid-column: 6/10;
+    margin-top: 40px;
+}
+
+.river-img2 {
+    grid-column: 2/5;
+    width: 100%;
+    margin-top: 30px;
+}
+/* - - - - - - - - - -  */   
+
 main section{
     text-align: center;
 }
@@ -254,4 +332,3 @@ main section image {
         margin-top: 25px;
     }
 }
-            
