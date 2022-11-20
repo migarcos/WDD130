@@ -55,12 +55,13 @@ main  {
   width: 100%;
   text-align: center;
 }
-main section .offer{
+main .offer{
   display: flex;
+  justify-content: space-between;
 }
-main section .show{
+main .show{
   display: grid;
-  grid-template-columns: repeat (5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 footer{
   background-color: black;
