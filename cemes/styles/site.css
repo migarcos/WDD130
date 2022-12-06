@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&family=Montserrat&family=Prompt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap');
 
 body{
   background-color: #ffffff; /*  */
@@ -7,7 +7,7 @@ body{
   font-size: 10px;
   margin: 0;
   padding: 0;
-  border: dotted 2px red;
+  /*border: dotted 2px red;*/
   size: 1em;
 }
 header {
@@ -15,14 +15,14 @@ header {
   justify-content: space-between;
   text-align: center;
   width: 100%;
-  border: dotted 2px yellowgreen;
+  /*border: dotted 2px yellowgreen;*/
   vertical-align: middle;
 }
 header p {
   font-size: 1em;
 }
 .networks {
-  width: 50%;
+  width: 20px;
 }
 header section img{
   border-radius: 30px;
@@ -30,34 +30,55 @@ header section img{
 }
 nav {
   width: 100%;
-  border: dotted 2px blue;
+  /*border: dotted 2px blue;*/
   display: block;    
-  background-color: rgb(8, 8, 8);
+  background-color:#930000 ; /*rgb(8, 8, 8)*/
   padding: 20px;
-  text-align: center;
+  text-align: center;    
 }
 nav a{
   padding: 10px 20px;
   text-decoration: none;
   font-size: 1.5em;
-  border: solid 2px rgb(211, 100, 26);
+  border: solid 2px rgb(211, 100, 26); /* */
   border-radius: 15px;
   margin: 0 5px;
   color:white;
 }
-nav a #actual{
+#actual{
   background-color: rgb(211, 100, 26);
   border: solid 2px rgb(211, 100, 26);
-  color:black;
+  color:white;
+  font-weight: 900;
 }
 nav a:hover {
-  background-color: rgb(211, 100, 26);
-  border: solid 2px rgb(211, 100, 26);
-  color:black;
+  background-color: #040a1c; /* rgb(211, 100, 26) */
+  border: solid 2px rgb(211, 100, 26); /* */
+  color: yellow; /* black;*/
 }
 main  {
   width: 100%;
   text-align: center;
+  font-size: 1.5em;
+}
+
+main section {
+  width: 100%;
+}
+main .text1 {
+  font-family: 'Maven+Pro', Arial, sans-serif;
+  grid-column: 2/5;
+  border: solid 2px rgb(211, 100, 26);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+main .text2 {
+  font-family: 'Maven+Pro', Arial, sans-serif;
+  grid-column: 2/5;
+  border-radius: 20px;
+  text-align: justify;
+  padding: 0 10%;
 }
 main .offer{
   display: flex;
@@ -67,12 +88,35 @@ main .show{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-main section {
-  size: 2em;
-  width: 100%;
+main .prods {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
+  background-color: rgb(4, 10, 28, 15%);
 }
+.prodR, .prodL {
+  background-color: rgb(231, 80, 35, 70%);
+  border-radius: 15px;
+  margin: 10px;
+  padding-right: 20px;
+}
+main .prodL {
+  grid-column: 2/3;
+}
+main .prodR {
+  grid-column: 4/5;
+}
+.prodL img, .prodR img {
+  float: left;
+  margin: 15px;
+  width: 50%;
+}
+.prodL p, .prodR p {
+  text-align: justify;
+}
+
+/*   ----- FOOTER  -----  */
 footer{
-  background-color: black;
+  background-color: #040a1c; /* black */
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
@@ -81,13 +125,25 @@ footer{
   text-align: center;
   padding: 15px;
 }
+footer ul {
+  list-style-type: none;
+}
 footer img{
   width: 100px;
   height: 100px;
   border:rgb(211, 100, 26) 5px solid;
   border-radius: 55px;
+  
   /*margin: 30px;*/
 }
+footer .media {
+  background-color: white;
+  border:rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
 a{
   text-decoration: none;
   color: white;
