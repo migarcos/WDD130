@@ -11,6 +11,7 @@ body{
   size: 1em;
 }
 header {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -18,12 +19,20 @@ header {
   /*border: dotted 2px yellowgreen;*/
   vertical-align: middle;
 }
+
+header input[type=text]{
+  background-image: url('searchicon.png');
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+}
 header p {
   font-size: 1em;
 }
 .networks {
-  width: 20px;
+  width: 30px;
 }
+
 header section img{
   border-radius: 30px;
   margin-right: 20px;
@@ -65,15 +74,15 @@ main  {
 main section {
   width: 100%;
 }
-main .text1 {
+.text1 {
   font-family: 'Maven+Pro', Arial, sans-serif;
-  grid-column: 2/5;
+  grid-column: 2/-2;
   border: solid 2px rgb(211, 100, 26);
   border-radius: 10px;
   padding: 10px;
   background-color: #ffffff;
 }
-main .text2 {
+.text2 {
   font-family: 'Maven+Pro', Arial, sans-serif;
   grid-column: 2/5;
   border-radius: 20px;
@@ -82,11 +91,41 @@ main .text2 {
 }
 main .offer{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #ffd7b5;
+  padding: 50px 50px;
 }
-main .show{
+.offer1 {
+  border: solid 2px rgb(128, 10, 10);
+  margin: 0 40px;
+  padding: 20px 0;  
+  background-color: #fff;
+
+}
+.offer1 P {
+  font-weight: 700;
+}
+.offer1 img {
+  width: 80%;
+}
+.show{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding: 50px 50px;
+}
+.show article {
+  border: solid 2px rgb(92, 19, 19);
+  border-radius: 5%;
+  padding: 25px 0;
+  grid-row: 2/3;
+  margin: 10px;
+  
+  
+}
+.title1 {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
+  background-color: rgb(255, 215, 181, 80%);
 }
 main .prods {
   display: grid;
