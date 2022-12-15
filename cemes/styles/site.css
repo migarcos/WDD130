@@ -127,10 +127,22 @@ main .offer{
   grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
   background-color: rgb(255, 215, 181, 80%);
 }
-main .prods {
+.prods {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
   background-color: rgb(4, 10, 28, 15%);
+}
+.prods a{
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 5px 10px;
+  color : yellow;
+}
+.prods a:hover{
+  border-radius: 5px;
+  border: solid 1px white;
+  padding: 5px 10px;
+  background-color: rgb(4, 10, 28, 50%);
 }
 .prodR, .prodL {
   background-color: rgb(231, 80, 35, 70%);
